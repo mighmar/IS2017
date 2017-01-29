@@ -1,0 +1,98 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+\usepackage[serbianc]{babel}
+\usepackage{titling}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[bookmarks]{hyperref}
+
+\usepackage[margin=2.5cm]{geometry}
+\addtolength{\hoffset}{0.5cm}
+\addtolength{\textwidth}{-0.5cm}
+
+\fancyheadoffset{1 cm}
+
+\setlength\parindent{0pt}
+
+\titleformat
+{\chapter} % command
+[display] % shape
+{\bfseries\Large\itshape} % format
+{Glava \ \thechapter} % label
+{0.5ex} % sep
+{
+    \rule{\textwidth}{1pt}
+    \vspace{1ex}
+    \centering
+} % before-code
+[
+\vspace{-0.5ex}%
+\rule{\textwidth}{0.3pt}
+] % after-code
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Glava \ \thechapter}
+\lhead{\thesection}
+\cfoot{\thepage}
+
+\begin{document}
+\renewcommand*\contentsname{ }
+
+\begin{titlepage}
+\begin{center}
+
+	\textbf{\Large Univerzitet u Beogradu}\\[0.5cm]
+	
+	{\large Matematički fakultet}\\[6cm]
+	
+	\textsc{\huge grupni studentski rad}\\[0.5cm]
+	
+	\textbf{\Large Informacioni sistem izdavaštva časopisa}\\[10cm]
+
+	\begin{tabular}{|l|l|}
+  		\hline
+	    Studenti: & Ozren Demonja \\ \cline{2-2}
+	              & Stefan Maksimović \\ \cline{2-2}
+	              & Marko Crnobrnja \\ \hline
+	    Predmet: & Informacioni sistemi (R271) \\ \hline
+	    Školska godina: & 2016/2017. \\ \hline
+	    Profesor: & Dr Saša Malkov	 \\ \hline
+	    Datum &  \\ \hline
+	\end{tabular}
+
+\newpage
+\end{center}
+\end{titlepage}
+
+\begin{center}
+	\textbf{\large SADRŽAJ}
+\end{center}
+\tableofcontents 
+\newpage
+
+\input{./uvod.tex}
+
+
+\chapter{Slučajevi upotrebe}
+
+
+\input{./pisanje_slucajevi.tex}
+
+\input{./grafika_slucajevi.tex}
+
+\input{./odabir_slucajevi.tex}
+
+\input{./klase.tex}
+
+\newpage
+
+
+\end{document}
