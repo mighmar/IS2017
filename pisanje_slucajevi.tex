@@ -25,7 +25,7 @@ Prilikom obrade, novinar shodno svom stilu pakuje informaciju za objavljivanje. 
 Objavljivanje(publikovanje) informacija se vrši novinar u dogovoru sa glavnim u\-red\-ni\-kom. Objavljivanje može usporiti ili osporiti cenzura. Cenzura može biti auto cenzura ili cenzura od strane glavnog urednika. \\
 
 
-\begin{figure}[h]
+\begin{figure}[hbtp]
     \centering
     \includegraphics[width=0.7\textwidth]{slike/pisanje}
     \caption{Dijagram slučajeva upotrebe - pisanje članka}
@@ -93,51 +93,9 @@ Ukoliko je ceo članak cenzurisan novinar može da pokuša da članak predstavi 
 
 	
 
-\begin{figure}[h]
+\begin{figure}[htp]
     \centering
-    \includegraphics[width=1.0\textwidth]{slike/1-bpmn}
-    \caption{BPMN dijagram}
-    \label{pisanje}
-\end{figure}	
-
-
-.
-
-\subsection{Komponovanje izdanja}
-Za svako izdanje glavni i odgovorni urednik odlučuje o broju članaka. Takođe pored broja članaka se zna koliko kolor, a koliko crno-belih strana može izdanje da ima, kao i gde i koliko može oglasa da se nalazi. Nazalost pošto se danas novine i časopisi ne finansiraju samo od prodatih primeraka ili pretplatnika, već uglavnom od sponzora, za svakog novog sponzora, olgašivača mora da se nađe mesto, makar i na štetu kvaliteta sadržaja.
-
-\subsubsection{Odabir članaka}
-\begin{description}
-\item [Opis] Glavni urednik bira članke koji će biti objavljeni.
-\item [Učesnici] Glavni urednik.
-\item [Ulaz] Članak spreman za objavljivanje i štampanje.
-\item [Izlaz] Odabrani članci.
-\item [Preduslov] Članak je spreman za objavljivanje i štampanje.
-\item [Postuslov] Članak je poslat na štampu.
-\end{description}   
-\subsubsection{Glavni tok}
-Glavni urednik pregleda članke. Pregled se sastoji od procene dužine, broja i kolora članaka. Ukoliko je broj, dužina ili kolor članaka veća od planirane vrši se odabir članaka. Ukoliko članci zadovoljavaju uslove, šalju se dalje na pripremu za štampu. Odabir članaka se vrši tako što prednost imaju aktuelne teme. 
-\subsubsection{Alternativni tok}
-Ukoliko je problem kolorit a sve teme su izuzetno aktuelne dozvoljava se u kontaktu sa menadžmentom da se prekorači dozvoljeni kolorit za najviše 5%.
-
-\subsubsection{Smeštanje oglasa}
-\begin{description}
-\item [Opis] Glavni urednik smešta oglase u časopis.
-\item [Učesnici] Glavni urednik, Oglašivač, Menadžment.
-\item [Ulaz] Plaćeni oglasi.
-\item [Izlaz] Raspoređeni oglasi.
-\item [Preduslov] Oglašivač je platio mesto za oglas(e).
-\item [Postuslov] Oglasi se nalaze na internet i/ili stampanom izdanju.
-\end{description}   
-\subsubsection{Glavni tok}
-Glavni urednik sortira oglase prema važnosti (redovni sponzori, vanredni…). Kada je završio sa sortiranjem, urednik raspoređuje oglase prema veličini na unapred odabrane lokacije u časopisu. Ukoliko nema viška oglasa glavni urednik salje oglase na objavljivanje. Ukoliko ima više oglasa nego lokacija glavni urednik obaveštava menadžment koji onda kontaktira oglašivača. Oglašivač odlučuje da li će dodatno doplatiti da se njegov oglas nadje u časopisu na dodatnim stranama po unapred utvrđenom cenovniku ili će odustati. Ukoliko oglašivač prihvati ponudu, kad uplati sredstva kontaktira menadžment koji proverava uplatu i kontaktira glavnog urednika. Glavni urednik zatim izdaje naređenje da se oglas stavi na dodatnu stranu ili da se neki članak ukloni i na njegovo mesto dođe oglas. Ukoliko oglašivač odustane kontaktira se menadžment sa kojim se dogovara oko povraćaja novca
-\subsubsection{Alternativni tok}
-Ukoliko nema dovoljno oglasa raspisuje se kratkotrajni tender za prostor po smanjenoj ceni.
-
-	
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1.0\textwidth]{slike/2-bpmn}
+    \includegraphics[width=0.9\textheight, angle=90]{slike/1-bpmn}
     \caption{BPMN dijagram}
     \label{pisanje}
 \end{figure}	
